@@ -1,0 +1,154 @@
+/*
+Cores:
+primary: #0D1F2D background
+secondary: #546A7B descricao
+light: #E4C3AD h1
+info: #FAE1DF
+extra: #9EA3B0
+*/
+
+/* Estilos globais e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main,
+.descricao,
+input,
+select,
+.pergunta input,
+.pergunta select {
+  width: 80%;
+  margin: auto;
+}
+
+/* Estilos base para texto e inputs */
+body,
+input,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Configurações visuais comuns para inputs e selects */
+input,
+select {
+  padding: 10px 15px;
+  display: block;
+  border: 2px solid #8a2be2; /* Cor roxa para a borda */
+  border-radius: 5px;
+  box-shadow: none; /* Sem sombra no estado normal */
+  width: 20%;
+}
+
+/* Foco para todos os inputs e selects */
+input:focus,
+select:focus {
+  outline: none; /* Remove o contorno padrão do navegador */
+  border: 2px solid #ff6347; /* Borda vermelha em foco */
+  box-shadow: 0 0 8px rgba(255, 99, 71, 0.5); /* Sombra suave vermelha */
+}
+
+/* Estilos específicos do cabeçalho */
+header {
+  text-align: center;
+  background-color: #0d1f2d;
+  overflow: hidden;
+}
+
+header h1,
+header h2 {
+  color: #e4c3ad;
+}
+
+header h1 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+header h2 {
+  font-size: 28px;
+}
+
+header p {
+  font-size: 24px;
+}
+
+/* Botão no cabeçalho e outras partes */
+button {
+  display: inline-block;
+  margin: 20px auto;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #0d1f2d; /* Cor primária para texto */
+  background-color: #e4c3ad; /* Cor clara para fundo */
+  border: 2px solid #546a7b; /* Cor secundária para borda */
+  padding: 10px 20px;
+  cursor: pointer; /* Muda o cursor para indicar a ação */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+button:hover {
+  background-color: #fae1df; /* Cor de informação mais clara para hover */
+  color: #0d1f2d; /* Mantém cor primária para texto em hover */
+}
+
+/* Estilos de descrição e perguntas */
+.descricao {
+  text-indent: 1em;
+  text-align: left;
+  color: #9ea3b0;
+}
+
+.descricao p,
+.pergunta {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pergunta {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Espaço entre o label e o input */
+  margin-bottom: 20px; /* Espaço entre as perguntas */
+  flex-wrap: nowrap; /* Impede que os itens se envolvam para a próxima linha */
+}
+
+.pergunta label {
+  color: #546a7b; /* Define a cor do texto, utilizando a cor secundária definida */
+  flex: 1;
+  margin-right: 10px;
+  white-space: nowrap; /* Mantém o texto do label numa única linha */
+}
+
+.pergunta .radio-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pergunta .radio-options label,
+.pergunta .radio-options input[type="radio"] {
+  margin: 0 10px;
+}
+
+/* Estilização do footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0d1f2d; /* Cor primária como fundo */
+  color: #e4c3ad; /* Cor clara para texto */
+  font-size: 16px;
+}
+
+footer a {
+  color: #fae1df; /* Cor de informação para links */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.2s; /* Transição suave para hover */
+}
+
+footer a:hover {
+  color: #e4c3ad; /* Cor clara para hover de links */
+}

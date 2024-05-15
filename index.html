@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <title>Projeto semana 1</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>LabQuiz</h1>
+        <section class="descricao">
+          <p>
+            Este quiz foi desenhado para testar seus conhecimentos básicos sobre
+            HTML e CSS, abrangendo desde a aplicação de estilos até o
+            entendimento de estruturas de marcação e propriedades de estilo.
+          </p>
+          <p>
+            Prepare-se para testar suas habilidades e descobrir mais sobre suas
+            forças e as áreas que podem precisar de mais estudo!
+          </p>
+        </section>
+        <h2>Que começe o jogo!</h2>
+        <form action="" method="">
+          <label for="nome" style="visibility: hidden">Digite seu nome</label
+          ><br />
+          <input type="text" id="nome" placeholder="Digite seu nome..." />
+          <button type="submit">Enviar</button>
+        </form>
+      </header>
+      <section class="quiz">
+        <form action="/submit-quiz" method="post">
+          <div class="pergunta">
+            <label for="pergunta_1"
+              >Como se define um estilo inline em HTML?</label
+            >
+            <input type="text" id="pergunta_1" name="pergunta_1" />
+          </div>
+          <div class="pergunta">
+            <label for="pergunta_2"
+              >Qual é a tag usada para criar uma lista ordenada em HTML?</label
+            >
+            <select id="pergunta_2" name="pergunta_2">
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="ol">ol</option>
+              <option value="ul">ul</option>
+              <option value="li">li</option>
+              <option value="order-list">order-list</option>
+            </select>
+          </div>
+          <div class="pergunta">
+            <label for="pergunta_3"
+              >Qual propriedade CSS é usada para alterar a cor do texto?</label
+            >
+            <select id="pergunta_3" name="pergunta_3">
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="font-color">font-color</option>
+              <option value="color">color</option>
+              <option value="background-color">background-color</option>
+              <option value="text-color">text-color</option>
+            </select>
+          </div>
+          <div class="pergunta">
+            <label for="pergunta_4"
+              >Como se referencia um arquivo CSS externo em um documento
+              HTML?</label
+            >
+            <input type="text" id="pergunta_4" name="pergunta_4" />
+          </div>
+          <div class="pergunta">
+            <label for="pergunta_5"
+              >Font-size é a propriedade CSS usada para alterar o tamanho da
+              fonte de um texto?</label
+            >
+            <div class="radio-options">
+              <input type="radio" id="sim" name="pergunta_5" value="sim" />
+              <label for="sim">Sim</label>
+              <input type="radio" id="nao" name="pergunta_5" value="nao" />
+              <label for="nao">Não</label>
+            </div>
+          </div>
+          <div class="pergunta">
+            <label for="pergunta_6"
+              >Qual é a propriedade CSS usada para definir a largura de um
+              elemento?</label
+            >
+            <select multiple id="pergunta_6" name="pergunta_6">
+              <option value="" disabled selected>
+                Deixe apertada a tecla ctrl para selecionar mais de uma opção
+              </option>
+              <option value="height">height</option>
+              <option value="size">size</option>
+              <option value="width">width</option>
+              <option value="max-width">max-width</option>
+            </select>
+          </div>
+          <div class="pergunta">
+            <label for="pergunta_7">Como se cria um comentário em CSS?</label>
+            <select multiple id="pergunta_7" name="pergunta_7">
+              <option value="" disabled selected>
+                Deixe apertada a tecla ctrl para selecionar mais de uma opção
+              </option>
+              <option value="">&lt;!-- --&gt</option>
+              <option value="">//</option>
+              <option value="">/* */</option>
+            </select>
+          </div>
+          <div class="pergunta">
+            <label for="pergunta_8"
+              >Qual é a propriedade CSS usada para definir a altura de um
+              elemento?</label
+            >
+            <select multiple id="pergunta_8" name="pergunta_8">
+              <option value="" disabled selected>
+                Deixe apertada a tecla ctrl para selecionar mais de uma opção
+              </option>
+              <option value="height">height</option>
+              <option value="size">size</option>
+              <option value="min-height">min-height</option>
+              <option value="max-height">max-height</option>
+            </select>
+          </div>
+          <button type="submit">Enviar respostas</button>
+        </form>
+      </section>
+      <footer>
+        <a href="https://github.com/lucascarnu" target="_blank"
+          >by Lucas Carnuccio - 2024</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>
